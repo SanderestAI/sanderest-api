@@ -184,8 +184,8 @@ class AccountManager
         $username = env('DINAHOSTING_USER');
         $password = env('DINAHOSTING_PASS');
         $command = 'Hosting_Ddbb_Mysql_Create';
-        $dbHost = 'api-v5.sanderest.es';
-        $dbName = 'bl5_' . $currentIndex . 'es';
+        $dbHost = 'api.sanderest.com';
+        $dbName = 'sr_bd' . $currentIndex . 'com';
         $dbUser = $dbName;
         $dbPassword = Utilities::generateRandomPassword();
         if (!$urlApi || !$username || !$password || !$dbHost || !$command || !$dbUser || !$dbName || !$dbPassword) {
@@ -194,7 +194,7 @@ class AccountManager
 
         $newIdentifiaction = new Identification();
         $newIdentifiaction->account = strtolower($account);
-        $newIdentifiaction->host = 'https://carta.sanderest.es/' . strtolower($account);
+        $newIdentifiaction->host = 'https://world.sanderest.com/' . strtolower($account);
         $newIdentifiaction->bbdd_host = $dbHost;
         $newIdentifiaction->bbdd_name = $dbName;
         $newIdentifiaction->bbdd_username = $dbUser;
