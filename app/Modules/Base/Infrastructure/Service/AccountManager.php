@@ -184,7 +184,7 @@ class AccountManager
         $username = env('DINAHOSTING_USER');
         $password = env('DINAHOSTING_PASS');
         $command = 'Hosting_Ddbb_Mysql_Create';
-        $dbHost = 'api.sanderest.com';
+        $dbHost = 'sanderest.com';
         $dbName = 'sr_bd' . $currentIndex . 'com';
         $dbUser = $dbName;
         $dbPassword = Utilities::generateRandomPassword();
