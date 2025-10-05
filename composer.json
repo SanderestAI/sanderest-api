@@ -1,7 +1,7 @@
 {
-    "name": "SanderestAI/sanderest-api",
+    "name": "sanderestai/sanderest-api",
     "type": "project",
-    "description": "Api del estudio Mad Fénix.",
+    "description": "Api del estudio Sanderest.",
     "keywords": [
         "worldbuilding",
         "ai",
